@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <forms>
+            select a topic:
+            <select ng-model="var">
+                <option value="">
+                <option value="Fruits">Fruits
+                <option value="Cars">Cars
+                <option value="Bikes">Bikes      
+            </select>
+        </forms>
+        <div ng-switch="var">
+            <div ng-switch-when="Fruits">
+                <h2>Fruits</h2>
+                <p>sdfdafasf</p>
+            </div>
+            <div ng-switch-when="Cars">
+                <h2>Cars</h2>
+                <p>assavsavas</p>
+            </div>
+            <div ng-switch-when="Bikes">
+                <h2>Bikes</h2>
+                <p>sfsafasfasfas</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

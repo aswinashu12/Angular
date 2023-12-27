@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <form>
+            pic a topic:
+            <input type="radio" ng-model="var" value="fruits">fruits
+            <input type="radio" ng-model="var" value="Cars">Cars
+            <input type="radio" ng-model="var" value="Bikes">Bikes
+        </form>
+        <div ng-switch="var">
+            <div ng-switch-when="fruits">
+                <h3>Fruits</h3>
+                <p>sdfdafas</p>
+            </div>
+            <div ng-switch-when="Cars">
+                <h3>Cars</h3>
+                <p>safsafsaf</p>
+            </div>
+            <div ng-switch-when="Bikes">
+                <h3>Bikes</h3>
+                <p>asfsafsaf</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
