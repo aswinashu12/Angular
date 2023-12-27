@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body>
+    
+<form ng-app="" name="myForm">
+    email:
+    <input type="email" name="myaddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">not a valid adress</span>
+</form>
+
+</body>
+</html>
