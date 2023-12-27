@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        border: 2px solid black;
+        padding: 8px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="myctrl">
+        <table>
+            <tr ng-repeat="x in name">
+                <td>{{x.name}}</td>
+                <td>{{x.country|uppercase}}</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        angular.module("myapp",[]).controller("myctrl",function($scope){
+            $scope.name=[
+                {name: "jack",country:"england"},
+                {name:"claudio",country:"wales"},
+                {name:"Laurent blanc",country:"france"},
+                {name:"phillips",country:"germany"}
+            ];
+        });
+    </script>
+</body>
+</html>
